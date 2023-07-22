@@ -6,6 +6,4 @@
 #include <string.h>
 #include <stdarg.h>
 int _printf(const char *format, ...);
-void int_to_str(int n);
-
 #endif
