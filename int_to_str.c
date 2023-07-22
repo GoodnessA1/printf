@@ -9,13 +9,14 @@
 void int_to_str(int n)
 {
 	char buffer[40];
-	char *p;
 	int i = 0;
+	char temp;
+	int left, right, isNegative;
 
 	if (n == 0) 
 		buffer[i++] = '0';
 	else {
-		int isNegative = 0;
+		isNegative = 0;
 
 		if (n < 0) {
 			isNegative = 1;
@@ -29,9 +30,8 @@ void int_to_str(int n)
 		if (isNegative) buffer[i++] = '-';
 	}
 
-	int left = 0;
-	int right = i - 1;
-	char temp;
+	left = 0;
+	right = i - 1;
 
 	while (left < right)
 	{
